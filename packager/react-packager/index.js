@@ -9,7 +9,10 @@
 'use strict';
 
 require('babel-core/register')({
-  only: /react-packager\/src/
+  only: /react-packager\/src/,
+    whitelist: [
+      'es6.parameters',
+    ],
 });
 
 useGracefulFs();
